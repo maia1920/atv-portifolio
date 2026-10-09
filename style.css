@@ -1,11 +1,9 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #111;
 }
-
 
 header {
   display: flex;
@@ -29,7 +27,6 @@ nav a {
   margin-left: 10px;
 }
 
-
 button,
 .botao {
   background: #111;
@@ -42,13 +39,11 @@ button,
   font-size: 14px;
 }
 
-
 section {
   max-width: 900px;
   margin: auto;
   padding: 40px 5%;
 }
-
 
 .sobre {
   display: flex;
@@ -70,7 +65,6 @@ section {
   border-radius: 10px;
   background: #999;
 }
-
 
 .skills {
   display: flex;
@@ -99,7 +93,6 @@ section {
 .skills li {
   padding: 3px 0;
 }
-
 
 .projetos h2 {
   font-size: 40px;
@@ -132,7 +125,6 @@ section {
   gap: 10px;
 }
 
-
 .contato {
   display: flex;
   flex-wrap: wrap;
@@ -148,12 +140,32 @@ section {
   padding: 20px;
 }
 
-.email input {
-  padding: 8px;
-  width: 200px;
-  margin-right: 5px;
+.email label {
+  display: block;
+  margin-top: 12px;
 }
 
+.email input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  background: transparent;
+  border: 0px;
+  border-bottom: solid 1px #111;
+}
+
+.email input:focus {
+  border: solid 1px limegreen;
+  outline: none;
+}
+
+.email input:hover {
+  border: solid 1px red;
+}
+
+.email button {
+  margin-top: 15px;
+}
 
 body.dark {
   background: #000;
